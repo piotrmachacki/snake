@@ -1,0 +1,28 @@
+{
+  "name": "snake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "prewatch": "rm -rf dist",
+    "watch": "parcel ./src/index.html watch",
+    "build": "parcel build ./src/index.html --public-url ./",
+    "lint": "eslint './*{ts}'",
+    "lint:fix": "eslint './*{ts}' --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.5"
+  }
+}
